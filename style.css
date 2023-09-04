@@ -1,0 +1,253 @@
+body{
+    background-color: black;
+}
+header{
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;}
+
+.titulo{
+    display: inline-block;
+    margin-left: 390px;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.subtitulo{
+    display: inline-block;
+    margin-left: 390px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: -20px;
+    color: rgb(255, 0, 0)
+}
+
+.img{
+    display: flex;
+    margin-left: 390px;
+    width: 800px;
+}
+
+.text{
+    display: inline-block;
+    margin: 0px 300px 0px 300px;
+    padding: 100px;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 700;
+
+}
+.desconto {
+    font-size: 25px;
+    margin-left: 390px;
+    color: rgb(255, 0, 0);
+    display: inline;
+    justify-content: space-evenly;
+}
+
+.name{ 
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 390px;
+    margin-top: 20px;
+    gap: 20px;
+    
+}
+
+.sold{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 1000px;
+    margin-top: -280px;
+    gap: 20px;
+
+}
+h2.EFECTS{ border-top: 0.4px solid white;
+    padding-top: 40px;
+    border-bottom: 0.4px solid white;
+    padding-bottom: 40px;
+    margin-left: 600px;
+    width: 800px;
+    color: white;
+    text-align: center;
+}
+
+ul{ 
+    display: flex;
+    justify-content: space-evenly;
+   background-color: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+li{
+    float: left;
+}
+
+li a, .drop{
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    
+}
+li a:hover, .drop:hover .dropbtn{
+   background-color: rgb(255, 0, 0);
+    transition: 0.7s;
+}
+
+li.drop{
+    display: inline-block;
+}
+/* fará com que as opções fiquem escondidas dentro da tag pai, que é o position: absolute;*/
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 150px;
+   
+}
+/*estilização das opções de links*/
+.drop-content a{
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    
+}
+/*quando o mouse estiver em cima do link que contem a tag a, ou seja, o nome do clicavel, ele ira mudar de cor*/
+.drop-content a:hover{
+    color:rgb(17, 0, 255);
+}
+/*quando o mouse passar por cima do drop, ele ira ativar o drop-content, que contem os links*/
+.drop:hover .drop-content{
+    display: block;
+    
+}
+
+.img2{
+    border-top: 0.4px solid white;
+    padding-top: 48px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 390px;
+    width: 800px;
+}
+
+.text2{
+    display: inline-block;
+    margin: 0px 300px 0px 300px;
+    padding: 100px;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.link{display: flex;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.textfinal{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.final2{display: flex;
+    margin-right: 385px;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+}
+
+@media screen and (max-width: 900px){
+    .header {
+        width: 600px; 
+    }
+}
+@media screen and (max-width: 700px){
+    .titulo{
+        display: flex;
+        margin: 0;
+        font-size: 20px;
+    }
+    .subtitulo{
+        
+        margin: 0;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .img{ display: flex;
+        margin-left: 25px;
+        padding-top: 20px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .text{
+      width: 300px;
+      font-size: 15px;
+      line-height: 20px;
+      margin-left: -70px;
+      margin-top: -50px;
+    }
+
+    .desconto{
+        display: inline;
+        justify-content: space-evenly;
+        margin: 0;
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .name{
+        font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 300px;
+    gap: 20px;
+    }
+
+    .sold{
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-top: -250px;
+        gap: 3px;
+    }
+
+    .EFECTS{ display: flex;
+       margin-bottom: 50px;
+       width: 200px;
+       float: left;
+       border-top: none;
+        
+    }
+
+}
