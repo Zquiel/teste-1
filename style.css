@@ -242,11 +242,9 @@ li.drop{
         gap: 3px;
     }
 
-    .EFECTS{ display: flex;
-       margin-bottom: 50px;
-       width: 200px;
-       float: left;
-       border-top: none;
+    H2.EFECTS{ display: flex;
+       border: none;
+              margin: 0px 10px 0px 10px
         
     }
 
