@@ -242,10 +242,73 @@ li.drop{
         gap: 3px;
     }
 
-    H2.EFECTS{ display: flex;
-       border: none;
-              margin: 0px 10px 0px 10px
+    h2.EFECTS{display: flex;
+        font-size: 20px;
+        border: none;
+        float: left;
+        text-align: center;
+        margin: -80px 10px 0px 10px;
         
     }
 
+}
+
+.inicio{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 200px;
+    background-color:#E9E9E9 ;
+    width: 80%;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.botao{
+    background-color: rgb(255, 255, 255);
+    width: 10%;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.botao:hover{
+    transition: 0.6s;
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(96,6,9,1) 73%);
+}
+
+.caixa{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 20%;
+    height: auto;
+    background-color: #232323;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.reduzido{
+    padding: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.caixa:hover .reduzido{
+    white-space: normal;
+    }
+
+.caixa:hover{
+    border: 3px solid red;
+    transition: 0.2s;
+}
+.link-pag2{
+    
+    color: white;
+    text-decoration: none;
 }
