@@ -1,12 +1,48 @@
-body{
-    background-color: black;
-}
-header{
-    text-align: center;
-    background-color: black;
+*{
+    background: black;
     margin: 0;
     padding: 0;
-    color: white;}
+}
+
+.gen{
+    color: #fff;
+    text-decoration: none;
+}
+.gen:hover{
+    opacity: 0.7; 
+    color: red;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.logo:hover{
+    
+    font-size: 26px;
+    color: red;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    font-family: system-ui, -apple-system, helvetica, arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
 
 .titulo{
     display: inline-block;
@@ -83,61 +119,6 @@ h2.EFECTS{ border-top: 0.4px solid white;
     color: white;
     text-align: center;
 }
-
-ul{ 
-    display: flex;
-    justify-content: space-evenly;
-   background-color: black;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    
-}
-
-li{
-    float: left;
-}
-
-li a, .drop{
-    display: inline-block;
-    color: white;
-    padding: 14px 16px;
-    text-align: center;
-    
-}
-li a:hover, .drop:hover .dropbtn{
-   background-color: rgb(255, 0, 0);
-    transition: 0.7s;
-}
-
-li.drop{
-    display: inline-block;
-}
-/* fará com que as opções fiquem escondidas dentro da tag pai, que é o position: absolute;*/
-.drop-content{
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-    width: 150px;
-   
-}
-/*estilização das opções de links*/
-.drop-content a{
-    color: rgb(255, 255, 255);
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    
-}
-/*quando o mouse estiver em cima do link que contem a tag a, ou seja, o nome do clicavel, ele ira mudar de cor*/
-.drop-content a:hover{
-    color:rgb(17, 0, 255);
-}
-/*quando o mouse passar por cima do drop, ele ira ativar o drop-content, que contem os links*/
-.drop:hover .drop-content{
-    display: block;
-    
 }
 
 .img2{
@@ -264,6 +245,10 @@ li.drop{
     display: flex;
     justify-content: space-between;
 }
+
+.pag-inicio{
+    margin-top: 20px;}
+
 .botao{
     background-color: rgb(255, 255, 255);
     width: 10%;
